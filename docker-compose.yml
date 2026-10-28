@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  tasktracker-app:
+    build: .
+    image: tasktracker-app:latest
+    container_name: tasktracker-container
+    stdin_open: true # Mantém a entrada padrão (stdin) aberta para interação
+    tty: true        # Aloca um terminal virtual (pseudo-TTY)
